@@ -13,6 +13,7 @@ public class OrderController {
     public Integer testEureka(@PathVariable(name = "id") Integer id){
         Random random = new Random();
         int i = random.nextInt(9999);
+        System.out.println("test_1 branch");
         return i+id;
     }
 }
