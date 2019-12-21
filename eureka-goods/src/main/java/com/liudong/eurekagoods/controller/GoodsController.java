@@ -12,9 +12,9 @@ public class GoodsController {
     @Autowired
     GoodsService goodsService;
 
-    @RequestMapping("/getNumber")
-    public String getNumber(String goodsName,Integer id){
-        Integer orderId = goodsService.getNumber(id);
-        return goodsName+"订单ID=" + orderId;
+    @RequestMapping("/getOrderNumber")
+    public String getOrderNumber(String goodsName,Integer id){
+        Integer orderId = goodsService.getOrderNumber(id);
+        return "订单ID=" + orderId+",商品="+goodsName;
     }
 }

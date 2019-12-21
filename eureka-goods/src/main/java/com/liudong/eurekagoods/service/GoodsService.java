@@ -11,8 +11,8 @@ public class GoodsService {
     @Autowired
     RestTemplate restTemplate;
 
-    public Integer getNumber(Integer id){
-        String url = "http://eureka-order:8081/testEureka/{id}";
+    public Integer getOrderNumber(Integer id){
+        String url = "http://eureka-order/testEureka/{id}";
         return  restTemplate.getForObject(url, Integer.class, id);
     }
 }
