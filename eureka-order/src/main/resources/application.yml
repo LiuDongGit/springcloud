@@ -2,7 +2,7 @@ spring:
   application:
     name: eureka-order
 server:
-  port: 8083
+  port: 8081
 eureka:
   client:
     service-url:

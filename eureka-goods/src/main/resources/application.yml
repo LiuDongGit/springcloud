@@ -10,3 +10,8 @@ eureka:
     fetch-registry: true
     #\u9700\u8981\u5C06\u670D\u52A1\u6CE8\u518C\u5230eureka
     register-with-eureka: true
+
+#配置ribbon负载均衡策略
+#eureka-order:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

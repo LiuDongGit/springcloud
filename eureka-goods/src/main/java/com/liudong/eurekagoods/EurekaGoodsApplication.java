@@ -14,11 +14,4 @@ public class EurekaGoodsApplication {
     public static void main(String[] args) {
         SpringApplication.run(EurekaGoodsApplication.class, args);
     }
-
-    @Bean
-    @LoadBalanced
-    RestTemplate restTemplate(){
-        return new RestTemplate();
-    }
-
 }
